@@ -1,0 +1,40 @@
+# --- Android / Gradle
+.gradle/
+**/build/
+.cxx/
+local.properties
+.caches/
+captures/
+.externalNativeBuild/
+*.iml
+.idea/**/workspace.xml
+.idea/**/usage.statistics.xml
+.idea/**/shelf
+.idea/**/libraries
+.idea/**/modules.xml
+.idea/**/deploymentTargetDropDown.xml
+.idea/**/gradle.xml
+.idea/caches/
+.idea/modules/
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# --- Keystore & credentials
+*.jks
+*.keystore
+keystore.properties
+**/google-services.json
+**/GoogleService-Info.plist
+**/secrets.properties
+**/*.keystore
+**/*.jks
+
+# --- APK/AAB/archives
+*.apk
+*.aab
+*.ap_
+*.aapt
+
+# --- Misc
+.DS_Store
+Thumbs.db
