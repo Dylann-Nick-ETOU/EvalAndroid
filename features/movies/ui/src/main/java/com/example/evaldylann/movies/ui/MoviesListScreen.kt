@@ -58,6 +58,7 @@ fun MoviesListScreen(
     onRefresh: () -> Unit,
     onItemClick: (String) -> Unit
 ) {
+    val ctx = LocalContext.current
     val gradient = Brush.horizontalGradient(
         listOf(Color(0xFF0F2027), Color(0xFF203A43), Color(0xFF2C5364))
     )
@@ -82,7 +83,9 @@ fun MoviesListScreen(
         },
         floatingActionButton = {
             FloatingActionButton(
-                onClick = onRefresh,
+                onClick = {
+                    onRefresh()
+                },
                 containerColor = Color(0xFF2C5364),
                 contentColor = Color.White
             ) {
